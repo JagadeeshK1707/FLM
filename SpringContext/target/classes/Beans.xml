@@ -1,0 +1,41 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://springframework.org"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://springframework.org https://springframework.org">
+	<!-- Configuration here -->
+
+	<bean class="com.model.Users" id="user">
+		<property name="userId" value="1"></property>
+		<property name="value" value="ok"></property>
+	</bean>
+
+	<bean class="com.model.Users" id="user1">
+		<constructor-arg value="10"></constructor-arg>
+		<constructor-arg value="hi"></constructor-arg>
+	</bean>
+
+	<!--<bean class="com.model.Users" id="user1" bytype="Adress">
+		<constructor-arg index="1" value="10"></constructor-arg>
+		<constructor-arg index="2" value="hi"></constructor-arg>
+	</bean>-->
+
+	<bean class="com.model.Users" id="user2">
+		<property name="userId" value="5"></property>
+		<property name="value" value="okok"></property>
+		<property name="skills">
+			<list>
+				<value>java</value>
+				<value>sql</value>
+				<value>spring</value>
+				<value>selenium</value>
+			</list>
+		</property>
+		<property name="adress" ref="adres"></property> 
+
+	</bean>
+	<bean class="com.model.Adress" id="adres">
+		<property name="HouseNo" value="hi"></property>
+		<property name="Drno" value="ok"></property>
+	</bean>
+</beans>

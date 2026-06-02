@@ -1,0 +1,3 @@
+difference between the @commponant , @Bean
+@componant is used for created classes by us
+@Bean is used for predefined classes by putting for method and that method is returning the object of the predefined classes

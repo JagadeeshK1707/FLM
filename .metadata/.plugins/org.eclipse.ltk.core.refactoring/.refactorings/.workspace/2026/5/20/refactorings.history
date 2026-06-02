@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy Project &apos;SpringJdbcXML&apos;" description="Copy Project &apos;SpringJdbcXML&apos;" destination="D:/FLM/SpringFLM" element="/SpringJdbcXML" flags="7" id="org.eclipse.ltk.core.refactoring.copyproject.resource" name="SpringJdbcNoXML" stamp="1778388705437"/>
+</session>

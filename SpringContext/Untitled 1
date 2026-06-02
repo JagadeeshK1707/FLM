@@ -1,0 +1,112 @@
+Spring FLM
+Spring and spring boot
+Spring modules 
+Spring core / spring context
+Spring JDBC 
+Spring ORM
+Spring JPA
+Spring MVC(model view controller)
+Spring  REST
+Spring AOP
+Spring Security
+Spring Actuators
+Spring AI
+SpringBoot
+Spring boot is not a module advance version of spring(All above modules are available  in spring also bur some modules are not work with spring)
+
+Both difference is 
+Spring we go with annotation configuration
+Spring boot we can go with annotation configuration
+ 
+Design patterns
+Packaging structure 
+
+Design patterns 
+Single ton design pattern spring boot is always follows the singleton design pattern
+we can create in java create static one method of that variable and one private constructor and by calling that method we can achieve the singleton design pattern.
+
+Transitive dependencies : getting the underlying dependencies is called Transitive dependeicies
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://springframework.org"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://springframework.org 
+           https://springframework.org">
+    <!-- Configuration here -->
+</beans>
+
+// this is  we are using in the xml file meta data 
+We can go type in the google just type spring XSD
+By using the xml configuration we can create the singleton design pattern 
+We can break the rule also
+By creating another bean. In the xml file
+
+
+
+
+
+
+
+xml configuration
+1. we can create the single ton design patterns and make the rule break also
+
+- > this is the braking of the rule
+	<bean class="com.model.Users" id="user">
+		<property name="userId" value="1"></property>
+		<property name="value" value="ok"></property>
+	</bean>
+
+	<bean class="com.model.Users" id="user1">
+		<constructor-arg value="10"></constructor-arg>
+		<constructor-arg value="hi"></constructor-arg>
+	</bean>
+	
+public static void main(String[] args) {
+	
+	ApplicationContext container = new ClassPathXmlApplicationContext("Beans.xml");
+	Users bean = container.getBean("user",Users.class);
+	System.out.println(bean);
+	Users bean1 = container.getBean("user1",Users.class);
+	System.out.println(bean1);
+	
+	
+	
+now it generates the duplicate beans 
+
+
+Q. we can able to pass the values dynamically in the beans.xml
+yes
+
+<!--<bean class="com.model.Users" id="user1">
+		<constructor-arg index="1" value="10"></constructor-arg>
+		<constructor-arg index="2" value="hi"></constructor-arg>
+	</bean>-->
+	
+	
+we can go throught the constructor through the index base we can specify the index based also
+
+
+in xml alos Autowire type setting 
+
+1.bytype   (through the object type)
+2.byname   (through the object name)
+3.byconstructor
+
+
+when ever we are using the autowire in the XML format we can go through the constructor-args tag
+
+if we want ot download auto xmls we have to one setting , go to STS click on window>preferenmces>XML(wild web developer)
+
+----------------------------still here xml configuration-----------------------------------------
+
+
+
+
+
+
+
+
+

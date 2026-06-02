@@ -1,0 +1,24 @@
+Spring context belongs to spring concept
+we can create the objects by using the customereference @componant("test")
+Simtest bean = context.getBean("simtest",Simtest.class);
+@Qualifier bean - it tells you the exact qualifying bean
+scenario of qualifier annotation when the interfce impelments the multiple classes we are defing explictly
+@primary annotation used for class the inject autimatically with out qualifier
+@postconstructor , @predestroy 
+if any annotation are not getting as a suggestion we have to add the dependency of that annotation.
+@Qualifier and @Primary in this it will take the @Qualifier is the high priority for the same situtation
+
+Bean scope
+singleton - create every time same object 
+prototype - it creates the every time difference object
+request  
+application
+session
+
+
+Spring JDBC
+Spring uses one class is called JDBC templet
+
+
+
+

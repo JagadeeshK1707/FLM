@@ -1,0 +1,29 @@
+difference between the @commponant , @Bean
+@componant is used for created classes by us
+@Bean is used for predefined classes by putting for method and that method is returning the object of the predefined classes
+
+
+Spring ORM(xml,annotation)
+  hibernate is the ORM tool
+ -> configuration
+ 	hibernate.cfg.xml
+ session factory
+ session
+ begin transaction
+ persist
+ commit transaction
+ close session
+ session factory
+ 	local session factory bean
+ Datasource
+ Transaction management
+ 	@Teansactional
+ 	begin transaction
+ 	commit transaction
+ 	rollsback when an exception occures
+
+
+
+
+
+

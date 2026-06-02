@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy Project &apos;SpringContext&apos;" description="Copy Project &apos;SpringContext&apos;" destination="D:/FLM/SpringFLM" element="/SpringContext" flags="7" id="org.eclipse.ltk.core.refactoring.copyproject.resource" name="SpringContextNoXml" stamp="1778220811860"/>
+</session>

@@ -1,0 +1,23 @@
+spring 
+in spring we discussed still spring context and spring JDBC(with xml and without XML)
+Spring ORM(hibernate)
+
+orm steps 
+Configuation.cfg.xml
+session factory
+session
+begun transaction
+commit transaction
+close session
+
+
+
+Session factory was interface so implementing class is LocalsessionFactoryBean
+we are creating the object of the child class
+
+TransactionMannagement , HibernateTransactionManagement is the class by using this class we can manage transactions
+@Transactional
+the use of this annotation
+beguns the transaction,commit the transaction and roll backs the when the exception Occurs
+
+
