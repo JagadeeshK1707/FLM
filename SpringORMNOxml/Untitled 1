@@ -1,0 +1,75 @@
+for spring predefined class we cannot use @componant 
+we have to use @Bean for any method we have to create the object 
+
+
+this spring ORM by using the annotation based configuration
+1)spring context
+2)spring jdbc
+3)spring ORM
+4)spring MVC
+	MVC - model view controller
+	models  -  entity/pojo classes
+	view	-  front end
+	controllers	- servlets
+	
+front controller design pattern
+its a one type of servlet it takes all the frontend requests at a time  is called "Dispather servlets"
+Front controller = dispatcher servelet
+ there are only 2 types of servelets
+ 1) generic servelet  = all types of protocals are allowed on generic servlet (smtp,ftp)
+ 2) http servlet	= specifically used for http peotocal
+Http methods
+1) GET
+2) POST
+3) PUT			- put is used for update(full data need to update)  = The entire object is replaced.
+4) DELETE
+5) PATCH		- patch is used for update(partical update data)	= Only the specified field is updated.
+
+Status codes
+1xx -> for in formational
+
+2xx -> success
+200 -> ok (GET)
+201 -> created (post)
+202 -> Accepted  (1for uploaded requeste received - loading)
+204 -> no content(deleted)
+
+3xx -> redirection
+
+4xx -> client side error
+400 -> bad request
+401 -> unauthorized
+403 -> for bidden (not authenticated)
+404 -> not found
+405 -> method not allowed
+409 -> conflict
+
+5xx -> server side errors
+500 -> Internal server errors
+502 -> Bad gateway
+
+
+spring MVC
+ controller
+  servlets 
+  
+ @controller 		means marks this class as servlet class  it returns the views but we want data so we have to put @responsebody 
+ 
+ @controller + @responsebody = data
+ @controller + @responsebody = @restcontroller
+ 
+ @requestMapping    to declare the API end point
+ 
+  internalResourceViewResolver(IRVR)
+  prefix - path of the JSP file 
+  suffix - extension of the file
+  
+
+ 
+
+
+
+ 
+
+
+
